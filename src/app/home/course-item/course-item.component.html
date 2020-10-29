@@ -1,1 +1,9 @@
-<p>course-item works!</p>
+<div class="card">
+    <img [src]="course.hinhAnh" height="300" />
+    <div class="card-body">
+        <p class="lead">{{course.tenKhoaHoc}}</p>
+        <p>{{course.moTa}}</p>
+        <p class="text-info">Giảng viên: {{course.nguoiTao.hoTen}}</p>
+        <button [routerLink]=" '/detail/' + course.maKhoaHoc" class="btn btn-danger">Chi Tiết</button>
+    </div>
+</div>

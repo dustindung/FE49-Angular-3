@@ -1,1 +1,8 @@
-<p>course-list works!</p>
+<div class="container">
+    <h1 class="text-center display-4 my-5">Course List</h1>
+    <div class="row">
+        <div class="col-3" *ngFor="let item of courseList">
+            <app-course-item [course]="item"></app-course-item>
+        </div>
+    </div>
+</div>

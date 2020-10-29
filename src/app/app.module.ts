@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
+import { DetailModule } from './detail/detail.module';
+import { SignInModule } from './sign-in/sign-in.module';
+import { SignUpModule } from './sign-up/sign-up.module';
+import { RoutingModule } from './routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -11,6 +16,11 @@ import { HomeModule } from './home/home.module';
   imports: [
     BrowserModule,
     HomeModule,
+    DetailModule,
+    SignInModule,
+    SignUpModule,
+    RoutingModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

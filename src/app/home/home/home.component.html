@@ -1,2 +1,5 @@
 <app-header></app-header>
-<p class="display-4">home works!</p>
+
+<app-course-list></app-course-list>
+<pagination [totalItems]="totalItems" [(ngModel)]="CurrentPage" [maxSize]="maxSize"
+    (pageChanged)="handleChangePage($event)" [itemsPerPage]="pageSize"></pagination>

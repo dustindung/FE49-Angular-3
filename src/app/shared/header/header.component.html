@@ -1,1 +1,8 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand navbar-dark bg-success">
+    <div class="nav navbar-nav">
+        <a routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"
+            class="nav-item nav-link">Home <span class="sr-only">(current)</span></a>
+        <a routerLink="/signin" routerLinkActive="active" class="nav-item nav-link">Sign In</a>
+        <a routerLink="/signup" routerLinkActive="active" class="nav-item nav-link">Sign Up</a>
+    </div>
+</nav>

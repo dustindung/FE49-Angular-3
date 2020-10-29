@@ -4,7 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { CourseItemComponent } from './course-item/course-item.component';
 import { SharedModule } from '../shared/shared.module';
-
+import { HttpClientModule } from '@angular/common/http';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -12,6 +14,9 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     SharedModule,
+    HttpClientModule,
+    PaginationModule.forRoot(),
+    RouterModule,
   ],
   exports: [HomeComponent]
 })
