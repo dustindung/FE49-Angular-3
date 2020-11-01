@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { NgForm } from "@angular/forms";
 
 @Component({
-  selector: 'app-sign-up-index',
-  templateUrl: './sign-up-index.component.html',
-  styleUrls: ['./sign-up-index.component.scss']
+  selector: "app-sign-up-index",
+  templateUrl: "./sign-up-index.component.html",
+  styleUrls: ["./sign-up-index.component.scss"],
 })
 export class SignUpIndexComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  handleSubmit(form: NgForm) {
+    console.log(form);
+    console.log(form.value);
   }
-
 }

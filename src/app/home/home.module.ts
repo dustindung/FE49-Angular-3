@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     PaginationModule.forRoot(),
     RouterModule,
+    FormsModule
   ],
   exports: [HomeComponent]
 })
